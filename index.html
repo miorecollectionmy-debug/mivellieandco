@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Mivellie & Co</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #fff8fb;
+      color: #444;
+    }
+
+    header {
+      background: linear-gradient(135deg, #f7c6d9, #f9dce7);
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      color: #a85d7b;
+      font-size: 30px;
+    }
+
+    header p {
+      margin-top: 8px;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    .hero h2 {
+      color: #a85d7b;
+      font-size: 28px;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      margin-bottom: 25px;
+      line-height: 1.6;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #d87b9e;
+      color: white;
+      padding: 14px 25px;
+      border-radius: 30px;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .products {
+      padding: 30px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .products h2 {
+      text-align: center;
+      color: #a85d7b;
+      margin-bottom: 25px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 18px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+      text-align: center;
+    }
+
+    .card h3 {
+      color: #a85d7b;
+      margin-bottom: 10px;
+    }
+
+    .price {
+      font-weight: bold;
+      margin: 12px 0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      margin-top: 30px;
+      background: #f7dce7;
+      line-height: 2;
+    }
+
+    footer a {
+      color: #a85d7b;
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Mivellie & Co</h1>
+  <p>Digital Products • Learning • Creativity ✨</p>
+</header>
+
+<section class="hero">
+  <h2>Learn, Create & Grow 💕</h2>
+
+  <p>
+    Discover cute and useful digital products,
+    worksheets and learning materials for little ones.
+  </p>
+
+  <a href="#products" class="btn">Shop Now 🛍️</a>
+</section>
+
+<section class="products" id="products">
+
+  <h2>Our Digital Products ✨</h2>
+
+  <div class="grid">
+
+    <div class="card">
+      <h3>📚 Learning Worksheet</h3>
+      <p>Fun printable worksheet for children.</p>
+      <p class="price">RM5.00</p>
+      <button class="btn" onclick="addCart('Learning Worksheet')">
+        Add to Cart 🛒
+      </button>
+    </div>
+
+    <div class="card">
+      <h3>🔢 Math Worksheet</h3>
+      <p>Fun maths activities for little learners.</p>
+      <p class="price">RM5.00</p>
+      <button class="btn" onclick="addCart('Math Worksheet')">
+        Add to Cart 🛒
+      </button>
+    </div>
+
+    <div class="card">
+      <h3>🎨 Activity Pack</h3>
+      <p>Creative activities for children.</p>
+      <p class="price">RM10.00</p>
+      <button class="btn" onclick="addCart('Activity Pack')">
+        Add to Cart 🛒
+      </button>
+    </div>
+
+  </div>
+
+</section>
+
+<footer>
+
+  <strong>Mivellie & Co 💕</strong><br>
+
+  📱 WhatsApp:
+  <a href="https://wa.me/60124427232">
+    +6012-4427232
+  </a>
+
+  <br>
+
+  📧 Email:
+  <a href="mailto:mivellieandco@gmail.com">
+    mivellieandco@gmail.com
+  </a>
+
+  <br>
+
+  📸 Threads: @mivellieandco
+
+</footer>
+
+<script>
+
+function addCart(product) {
+  alert(product + " has been added to your cart! 🛒");
+}
+
+</script>
+
+</body>
+</html>
