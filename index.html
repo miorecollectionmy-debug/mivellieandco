@@ -1,0 +1,1360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Mivellie & Co | Little Learners Big Dreams</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+
+<style>
+
+/* =========================
+   COLOURS
+========================= */
+
+:root {
+  --cream: #f7f2ea;
+  --blush: #f1e3e7;
+  --pink: #ce8499;
+  --mint: #d9e9e4;
+  --purple: #66596b;
+  --text: #55525b;
+  --white: #fffdfb;
+}
+
+
+/* =========================
+   GENERAL
+========================= */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--cream);
+  color: var(--text);
+  font-family: "DM Sans", sans-serif;
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+nav {
+  height: 100px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 5vw;
+
+  background: rgba(247, 242, 234, 0.97);
+
+  border-bottom: 1px solid #e5d9d6;
+
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-family: "Playfair Display", serif;
+
+  font-size: clamp(28px, 4vw, 42px);
+
+  font-weight: 600;
+
+  color: var(--purple);
+
+  letter-spacing: -1px;
+
+  white-space: nowrap;
+}
+
+.logo .pink {
+  color: #d88ea1;
+}
+
+.navlinks {
+  display: flex;
+  gap: 30px;
+}
+
+.navlinks a {
+  text-decoration: none;
+
+  color: #4e4b53;
+
+  font-size: 20px;
+
+  font-weight: 600;
+}
+
+
+/* =========================
+   SECTIONS
+========================= */
+
+section {
+  padding: 90px 7vw;
+}
+
+
+/* =========================
+   SMALL TITLE
+========================= */
+
+.eyebrow {
+
+  color: #bf788c;
+
+  letter-spacing: 6px;
+
+  text-transform: uppercase;
+
+  font-weight: 700;
+
+  font-size: 15px;
+
+  text-align: center;
+
+  margin-bottom: 22px;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+
+  min-height: 760px;
+
+  text-align: center;
+
+  padding-top: 100px;
+
+  background:
+
+  radial-gradient(
+  circle at 50% 15%,
+  #f8e6ed 0,
+  transparent 32%
+  ),
+
+  linear-gradient(
+  120deg,
+  #f1e6e9,
+  #f8f2ec 55%,
+  #eee4e5
+  );
+}
+
+
+h1,
+h2,
+h3 {
+
+  font-family: "Playfair Display", serif;
+
+  color: var(--purple);
+
+  margin: 0;
+}
+
+
+.hero h1 {
+
+  font-size: clamp(
+  54px,
+  9vw,
+  105px
+  );
+
+  line-height: 0.98;
+}
+
+
+.hero h1 em {
+
+  display: block;
+
+  color: #d6899f;
+}
+
+
+.lead {
+
+  max-width: 720px;
+
+  margin: 34px auto;
+
+  font-size: 24px;
+
+  line-height: 1.7;
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+.actions {
+
+  display: flex;
+
+  justify-content: center;
+
+  gap: 20px;
+
+  flex-wrap: wrap;
+
+  margin-top: 38px;
+}
+
+
+.btn {
+
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  min-width: 230px;
+
+  padding: 22px 30px;
+
+  border-radius: 999px;
+
+  text-decoration: none;
+
+  font-weight: 700;
+
+  font-size: 18px;
+
+  transition: 0.2s;
+}
+
+
+.btn:hover {
+
+  transform: translateY(-3px);
+}
+
+
+.primary {
+
+  background: var(--pink);
+
+  color: white;
+}
+
+
+.secondary {
+
+  background: white;
+
+  color: var(--purple);
+
+  border: 1px solid #e0d4d6;
+}
+
+
+/* =========================
+   ABC CIRCLE
+========================= */
+
+.abc-wrap {
+
+  height: 400px;
+
+  position: relative;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+}
+
+
+.abc {
+
+  width: 380px;
+
+  height: 380px;
+
+  border-radius: 50%;
+
+  background: #d4e7e1;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  flex-direction: column;
+
+  font-family: "Playfair Display", serif;
+
+  font-size: 78px;
+
+  color: var(--purple);
+}
+
+
+.abc small {
+
+  font-size: 48px;
+
+  color: #d6879d;
+
+  margin-top: 8px;
+}
+
+
+.decor {
+
+  position: absolute;
+
+  font-size: 55px;
+}
+
+
+.d1 {
+
+  left: 10%;
+
+  top: 20px;
+}
+
+
+.d2 {
+
+  right: 10%;
+
+  top: 80px;
+}
+
+
+.d3 {
+
+  left: 12%;
+
+  bottom: 0;
+}
+
+
+.d4 {
+
+  right: 12%;
+
+  bottom: 0;
+}
+
+
+/* =========================
+   EXPLORE WORKSHEETS
+========================= */
+
+.explore {
+
+  background: #f8f3ec;
+
+  text-align: center;
+}
+
+
+.explore h2 {
+
+  font-size: clamp(
+  46px,
+  7vw,
+  78px
+  );
+}
+
+
+.cards {
+
+  display: grid;
+
+  grid-template-columns:
+  repeat(4, 1fr);
+
+  gap: 24px;
+
+  max-width: 1200px;
+
+  margin: 55px auto 0;
+}
+
+
+.card {
+
+  min-height: 330px;
+
+  background:
+  rgba(255,255,255,0.75);
+
+  border-radius: 48px;
+
+  padding: 50px 25px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  box-shadow:
+  0 18px 45px
+  rgba(120,91,92,0.06);
+}
+
+
+.card .emoji {
+
+  font-size: 62px;
+
+  margin-bottom: 24px;
+}
+
+
+.card h3 {
+
+  font-family: "DM Sans", sans-serif;
+
+  font-size: 28px;
+
+  color: #4f4c54;
+}
+
+
+.card p {
+
+  font-size: 19px;
+
+  line-height: 1.55;
+}
+
+
+.explore-link {
+
+  color: #c27c91;
+
+  font-weight: 700;
+
+  text-decoration: none;
+
+  font-size: 19px;
+
+  margin-top: 10px;
+}
+
+
+/* =========================
+   FEATURES
+========================= */
+
+.features {
+
+  background: #f0e2e6;
+
+  text-align: center;
+}
+
+
+.features h2 {
+
+  font-size:
+  clamp(46px, 7vw, 78px);
+}
+
+
+.feature-list {
+
+  max-width: 800px;
+
+  margin: 65px auto 0;
+
+  display: grid;
+
+  gap: 65px;
+}
+
+
+.feature .emoji {
+
+  font-size: 60px;
+}
+
+
+.feature h3 {
+
+  font-family: "DM Sans", sans-serif;
+
+  font-size: 31px;
+
+  margin:
+  15px 0 10px;
+}
+
+
+.feature p {
+
+  font-size: 21px;
+
+  margin: 0;
+}
+
+
+/* =========================
+   BUNDLE
+========================= */
+
+.bundle {
+
+  background: #f7f2ea;
+
+  text-align: center;
+}
+
+
+.bundle h2 {
+
+  font-size:
+  clamp(46px, 7vw, 78px);
+}
+
+
+.bundle-box {
+
+  max-width: 850px;
+
+  background: #fffdfd;
+
+  border-radius: 55px;
+
+  margin: 55px auto 0;
+
+  padding: 60px;
+}
+
+
+.bundle-banner {
+
+  background: #d5e7e1;
+
+  border-radius: 48px;
+
+  padding: 65px 20px;
+
+  font-size: 35px;
+}
+
+
+.bigemoji {
+
+  font-size: 80px;
+
+  display: block;
+
+  margin-bottom: 18px;
+}
+
+
+.bundle-box h3 {
+
+  font-size: 48px;
+
+  margin:
+  45px 0 20px;
+}
+
+
+.bundle-box p {
+
+  font-size: 22px;
+
+  line-height: 1.7;
+
+  max-width: 680px;
+
+  margin: auto;
+}
+
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact {
+
+  background: #d6e8e3;
+
+  text-align: center;
+
+  min-height: 650px;
+}
+
+
+.contact h2 {
+
+  font-size:
+  clamp(46px, 7vw, 78px);
+}
+
+
+.contact p {
+
+  max-width: 700px;
+
+  margin:
+  30px auto 45px;
+
+  font-size: 23px;
+
+  line-height: 1.7;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+
+  background: #f7f2ea;
+
+  text-align: center;
+
+  padding: 70px 20px;
+}
+
+
+.tag {
+
+  font-size: 21px;
+
+  margin: 15px 0;
+
+  color: #827783;
+}
+
+
+.copy {
+
+  color: #938990;
+
+  font-size: 17px;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 800px) {
+
+  nav {
+
+    height: 90px;
+
+    padding: 0 5vw;
+  }
+
+
+  .navlinks {
+
+    gap: 18px;
+  }
+
+
+  .navlinks a {
+
+    font-size: 17px;
+  }
+
+
+  section {
+
+    padding:
+    75px 8vw;
+  }
+
+
+  .hero {
+
+    padding-top: 80px;
+
+    min-height: 680px;
+  }
+
+
+  .lead {
+
+    font-size: 20px;
+  }
+
+
+  .abc {
+
+    width: 300px;
+
+    height: 300px;
+
+    font-size: 64px;
+  }
+
+
+  .abc small {
+
+    font-size: 40px;
+  }
+
+
+  .abc-wrap {
+
+    height: 320px;
+  }
+
+
+  .decor {
+
+    font-size: 45px;
+  }
+
+
+  .cards {
+
+    grid-template-columns:
+    1fr;
+
+    gap: 28px;
+  }
+
+
+  .card {
+
+    min-height: 280px;
+
+    border-radius: 42px;
+  }
+
+
+  .bundle-box {
+
+    padding: 28px 18px;
+
+    border-radius: 42px;
+  }
+
+
+  .bundle-banner {
+
+    border-radius: 34px;
+  }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- =========================
+NAVIGATION
+========================= -->
+
+<nav>
+
+<div class="logo">
+
+Mivellie
+<span class="pink">& Co</span>
+✿
+
+</div>
+
+
+<div class="navlinks">
+
+<a href="#home">
+Home
+</a>
+
+<a href="#contact">
+Contact
+</a>
+
+</div>
+
+</nav>
+
+
+
+<!-- =========================
+HOME / HERO
+========================= -->
+
+<section
+class="hero"
+id="home">
+
+
+<div class="eyebrow">
+
+WELCOME TO MIVELLIE & CO ✨
+
+</div>
+
+
+<h1>
+
+Little Learners,
+
+<em>
+Big Dreams.
+</em>
+
+</h1>
+
+
+<p class="lead">
+
+Fun, colourful and engaging printable
+worksheets designed to make learning
+feel like play.
+
+</p>
+
+
+<div class="actions">
+
+<a
+class="btn primary"
+href="#bundle">
+
+Shop Worksheets 📚
+
+</a>
+
+
+<a
+class="btn secondary"
+href="#explore">
+
+Learn More ♡
+
+</a>
+
+</div>
+
+
+
+<div class="abc-wrap">
+
+<span class="decor d1">
+🌸
+</span>
+
+<span class="decor d2">
+✏️
+</span>
+
+<span class="decor d3">
+🦋
+</span>
+
+<span class="decor d4">
+🌈
+</span>
+
+
+<div class="abc">
+
+ABC
+
+<small>
+
+123
+
+</small>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =========================
+EXPLORE
+========================= -->
+
+<section
+class="explore"
+id="explore">
+
+
+<div class="eyebrow">
+
+LEARN THROUGH PLAY
+
+</div>
+
+
+<h2>
+
+Explore Our
+<br>
+
+Worksheets 📚
+
+</h2>
+
+
+<p class="lead">
+
+Printable activities created for
+fun learning moments at home.
+
+</p>
+
+
+
+<div class="cards">
+
+
+<!-- CARD 1 -->
+
+<div class="card">
+
+<div class="emoji">
+🎨
+</div>
+
+<h3>
+Colouring
+</h3>
+
+<p>
+Creative activities
+for little artists.
+</p>
+
+<a
+class="explore-link"
+href="#bundle">
+
+Explore →
+
+</a>
+
+</div>
+
+
+
+<!-- CARD 2 -->
+
+<div class="card">
+
+<div class="emoji">
+🔢
+</div>
+
+<h3>
+Math Learning
+</h3>
+
+<p>
+Fun number and
+counting practice.
+</p>
+
+<a
+class="explore-link"
+href="#bundle">
+
+Explore →
+
+</a>
+
+</div>
+
+
+
+<!-- CARD 3 -->
+
+<div class="card">
+
+<div class="emoji">
+✂️
+</div>
+
+<h3>
+Scissors Skills
+</h3>
+
+<p>
+Cutting activities
+for fine motor skills.
+</p>
+
+<a
+class="explore-link"
+href="#bundle">
+
+Explore →
+
+</a>
+
+</div>
+
+
+
+<!-- CARD 4 -->
+
+<div class="card">
+
+<div class="emoji">
+🔷
+</div>
+
+<h3>
+Shapes
+</h3>
+
+<p>
+Learn and recognise
+shapes through play.
+</p>
+
+<a
+class="explore-link"
+href="#bundle">
+
+Explore →
+
+</a>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- =========================
+FEATURES
+========================= -->
+
+<section class="features">
+
+
+<div class="eyebrow">
+
+MADE WITH LOVE
+
+</div>
+
+
+<h2>
+
+Learning can be fun ♡
+
+</h2>
+
+
+<p class="lead">
+
+Mivellie & Co creates simple printable
+resources to help little ones explore,
+practise and grow through enjoyable activities.
+
+</p>
+
+
+
+<div class="feature-list">
+
+
+<div class="feature">
+
+<div class="emoji">
+📥
+</div>
+
+<h3>
+Printable
+</h3>
+
+<p>
+Easy to download and print.
+</p>
+
+</div>
+
+
+
+<div class="feature">
+
+<div class="emoji">
+🎉
+</div>
+
+<h3>
+Fun Learning
+</h3>
+
+<p>
+Activities made to feel like play.
+</p>
+
+</div>
+
+
+
+<div class="feature">
+
+<div class="emoji">
+🏡
+</div>
+
+<h3>
+Learn Anywhere
+</h3>
+
+<p>
+Perfect for home learning time.
+</p>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- =========================
+PRODUCT BUNDLE
+========================= -->
+
+<section
+class="bundle"
+id="bundle">
+
+
+<div class="eyebrow">
+
+FAVOURITES
+
+</div>
+
+
+<h2>
+
+Start Learning Today
+
+<br>
+
+✨
+
+</h2>
+
+
+
+<div class="bundle-box">
+
+
+<div class="bundle-banner">
+
+<span class="bigemoji">
+
+📚
+
+</span>
+
+ABC • 123 • ✂️
+
+</div>
+
+
+
+<h3>
+
+Printable Activity
+
+<br>
+
+Bundle
+
+</h3>
+
+
+
+<p>
+
+A fun collection of activities
+for little learners.
+
+Add your actual products and
+prices here later.
+
+</p>
+
+
+
+<div class="actions">
+
+<a
+class="btn primary"
+href="#contact">
+
+Get Yours →
+
+</a>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- =========================
+CONTACT
+========================= -->
+
+<section
+class="contact"
+id="contact">
+
+
+<div class="eyebrow">
+
+GET IN TOUCH
+
+</div>
+
+
+<h2>
+
+Let's make learning
+
+<br>
+
+magical ✨
+
+</h2>
+
+
+<p>
+
+For orders and enquiries,
+contact us through WhatsApp
+or email.
+
+</p>
+
+
+
+<div class="actions">
+
+
+<a
+class="btn primary"
+href="https://wa.me/60124427232">
+
+WhatsApp 💬
+
+</a>
+
+
+
+<a
+class="btn secondary"
+href="mailto:mivellieandco@gmail.com">
+
+Email 📧
+
+</a>
+
+
+</div>
+
+
+</section>
+
+
+
+<!-- =========================
+FOOTER
+========================= -->
+
+<footer>
+
+
+<div class="logo">
+
+Mivellie
+
+<span class="pink">
+
+& Co
+
+</span>
+
+✿
+
+</div>
+
+
+<p class="tag">
+
+Little Learners • Big Dreams
+
+</p>
+
+
+<p class="copy">
+
+© 2026 Mivellie & Co.
+All rights reserved.
+
+</p>
+
+
+</footer>
+
+
+</body>
+
+</html>
