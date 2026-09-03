@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Kids Learning Worksheets</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #fff9fb;
+      color: #555;
+      line-height: 1.6;
+    }
+
+    /* =========================
+       HEADER
+    ========================= */
+
+    header {
+      background: linear-gradient(135deg, #ffdce6, #fff1f5);
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 42px;
+      color: #e47b9a;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 18px;
+      color: #777;
+    }
+
+    .hero-icon {
+      font-size: 45px;
+      margin-bottom: 10px;
+    }
+
+    /* =========================
+       PRODUCTS
+    ========================= */
+
+    .products {
+      max-width: 1150px;
+      margin: auto;
+      padding: 60px 20px;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 45px;
+    }
+
+    .section-title h2 {
+      font-size: 32px;
+      color: #d86f91;
+      margin-bottom: 10px;
+    }
+
+    .section-title p {
+      color: #888;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+    }
+
+    .product-card {
+      background: white;
+      border-radius: 25px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+      transition: 0.3s;
+      padding-bottom: 25px;
+      text-align: center;
+    }
+
+    .product-card:hover {
+      transform: translateY(-8px);
+    }
+
+    .product-image {
+      width: 100%;
+      height: 260px;
+      object-fit: cover;
+      background: #ffe8ef;
+    }
+
+    .product-content {
+      padding: 25px 20px 10px;
+    }
+
+    .product-title {
+      font-size: 24px;
+      color: #555;
+      margin-bottom: 10px;
+    }
+
+    .product-description {
+      color: #888;
+      min-height: 55px;
+      margin-bottom: 20px;
+    }
+
+    .price {
+      font-size: 32px;
+      font-weight: bold;
+      color: #d86f91;
+      margin-bottom: 25px;
+    }
+
+    /* =========================
+       CUTE BUTTON - STYLE 3
+    ========================= */
+
+    .buy-button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 14px;
+
+      width: 88%;
+      margin: auto;
+
+      padding: 16px 20px;
+
+      text-decoration: none;
+
+      background: linear-gradient(
+        135deg,
+        #f7a3b9,
+        #ef7f9e
+      );
+
+      color: white;
+
+      font-size: 21px;
+      font-weight: bold;
+      letter-spacing: 1px;
+
+      border-radius: 50px;
+
+      border: 3px solid white;
+
+      outline: 2px dashed #f7a3b9;
+      outline-offset: -10px;
+
+      box-shadow:
+        0 8px 18px rgba(235, 117, 150, 0.35);
+
+      transition: 0.3s;
+    }
+
+    .buy-button:hover {
+      transform: scale(1.04);
+      box-shadow:
+        0 12px 25px rgba(235, 117, 150, 0.5);
+    }
+
+    .cart {
+      font-size: 30px;
+    }
+
+    .heart {
+      font-size: 26px;
+    }
+
+    /* =========================
+       ABOUT SECTION
+    ========================= */
+
+    .about {
+      background: #fff0f4;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .about h2 {
+      color: #d86f91;
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+
+    .about p {
+      max-width: 650px;
+      margin: auto;
+      color: #777;
+      font-size: 17px;
+    }
+
+    /* =========================
+       FOOTER
+    ========================= */
+
+    footer {
+      background: #ef9eb5;
+      color: white;
+      text-align: center;
+      padding: 25px;
+      font-size: 15px;
+    }
+
+    /* =========================
+       MOBILE
+    ========================= */
+
+    @media (max-width: 900px) {
+
+      .product-grid {
+        grid-template-columns: 1fr;
+      }
+
+      header h1 {
+        font-size: 32px;
+      }
+
+      .product-card {
+        max-width: 450px;
+        margin: auto;
+        width: 100%;
+      }
+
+    }
+
+  </style>
+</head>
+
+
+<body>
+
+
+<!-- =========================
+     HEADER
+========================= -->
+
+<header>
+
+  <div class="hero-icon">🌈 📚 ✏️</div>
+
+  <h1>Kids Learning Worksheets</h1>
+
+  <p>
+    Fun • Cute • Educational Activities for Little Learners ♡
+  </p>
+
+</header>
+
+
+
+<!-- =========================
+     PRODUCTS
+========================= -->
+
+<section class="products">
+
+  <div class="section-title">
+
+    <h2>Choose Your Learning Set 🎀</h2>
+
+    <p>
+      Printable worksheets designed for fun learning at home ♡
+    </p>
+
+  </div>
+
+
+
+  <div class="product-grid">
+
+
+    <!-- =========================
+         PRODUCT 1
+    ========================= -->
+
+    <div class="product-card">
+
+      <!-- TUKAR GAMBAR DI SINI -->
+      <img
+        src="images/shapes-colours.jpg"
+        alt="Shapes and Colours Set"
+        class="product-image"
+      >
+
+      <div class="product-content">
+
+        <h3 class="product-title">
+          Shapes and Colours Set
+        </h3>
+
+        <p class="product-description">
+          5 sets of shapes and colours learning worksheets.
+        </p>
+
+        <div class="price">
+          RM5
+        </div>
+
+      </div>
+
+
+      <a
+        href="https://toyyibpay.com/shapes-and-colours-set"
+        target="_blank"
+        class="buy-button"
+      >
+
+        <span class="cart">🛒</span>
+
+        <span>I WANT THIS!</span>
+
+        <span class="heart">♡</span>
+
+      </a>
+
+    </div>
+
+
+
+    <!-- =========================
+         PRODUCT 2
+    ========================= -->
+
+    <div class="product-card">
+
+      <!-- TUKAR GAMBAR DI SINI -->
+      <img
+        src="images/abc-numbers.jpg"
+        alt="ABC and Numbers Set"
+        class="product-image"
+      >
+
+      <div class="product-content">
+
+        <h3 class="product-title">
+          ABC and Numbers Set
+        </h3>
+
+        <p class="product-description">
+          5 sets of ABC and numbers fun learning activities.
+        </p>
+
+        <div class="price">
+          RM5
+        </div>
+
+      </div>
+
+
+      <a
+        href="https://toyyibpay.com/alphabets-and-numbers-set"
+        target="_blank"
+        class="buy-button"
+      >
+
+        <span class="cart">🛒</span>
+
+        <span>I WANT THIS!</span>
+
+        <span class="heart">♡</span>
+
+      </a>
+
+    </div>
+
+
+
+    <!-- =========================
+         PRODUCT 3
+    ========================= -->
+
+    <div class="product-card">
+
+      <!-- TUKAR GAMBAR DI SINI -->
+      <img
+        src="images/kids-activity.jpg"
+        alt="Kids Activity Set"
+        class="product-image"
+      >
+
+      <div class="product-content">
+
+        <h3 class="product-title">
+          Kids Activity Set
+        </h3>
+
+        <p class="product-description">
+          12 sets of kids activities including scissors skills,
+          shapes, colouring, spelling and more + FREE GIFT!
+        </p>
+
+        <div class="price">
+          RM10
+        </div>
+
+      </div>
+
+
+      <a
+        href="https://toyyibpay.com/kids-activity-set"
+        target="_blank"
+        class="buy-button"
+      >
+
+        <span class="cart">🛒</span>
+
+        <span>I WANT THIS!</span>
+
+        <span class="heart">♡</span>
+
+      </a>
+
+    </div>
+
+
+  </div>
+
+</section>
+
+
+
+<!-- =========================
+     ABOUT
+========================= -->
+
+<section class="about">
+
+  <h2>Made for Little Learners 🌈</h2>
+
+  <p>
+    Our printable learning activities are designed to make learning
+    fun, colourful and exciting for children.
+    Perfect for home learning, preschool activities and little hands
+    who love to explore!
+  </p>
+
+</section>
+
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+  © 2026 Kids Learning Worksheets ♡
+  <br>
+  Made with love for little learners 🎀
+
+</footer>
+
+
+</body>
+
+</html>
