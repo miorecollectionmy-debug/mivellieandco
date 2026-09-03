@@ -1,0 +1,1149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Mivellie & Co. | Little Learners</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap');
+
+:root{
+  --pink:#f38aaa;
+  --pink-light:#ffdce8;
+  --blush:#fff5f8;
+  --mint:#d9f2ec;
+  --mint-dark:#72b9aa;
+  --purple:#8b6fc5;
+  --text:#5b4b55;
+  --white:#ffffff;
+  --cream:#fffdfb;
+  --border:#f2dce5;
+  --shadow:0 12px 35px rgba(117,82,105,.12);
+}
+
+*{
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  margin:0;
+  background:linear-gradient(
+    180deg,
+    #fff9fb 0%,
+    #fffdfb 55%,
+    #f5fffc 100%
+  );
+  color:var(--text);
+  font-family:'Baloo 2',sans-serif;
+}
+
+a{
+  text-decoration:none;
+  color:inherit;
+}
+
+button{
+  font-family:inherit;
+  cursor:pointer;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header{
+  position:sticky;
+  top:0;
+  z-index:20;
+  background:rgba(255,253,251,.95);
+  backdrop-filter:blur(14px);
+  border-bottom:1px solid var(--border);
+}
+
+.nav{
+  max-width:1100px;
+  margin:auto;
+  padding:14px 20px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
+}
+
+.brand{
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+
+.bow{
+  font-size:34px;
+}
+
+.brand-name{
+  font-family:'Playfair Display',serif;
+  font-size:25px;
+  font-weight:600;
+  color:#7b5b68;
+}
+
+.brand-sub{
+  font-size:12px;
+  color:#c987a0;
+  margin-top:-5px;
+}
+
+nav{
+  display:flex;
+  gap:22px;
+  font-weight:600;
+  color:#7d6872;
+}
+
+nav a:hover{
+  color:var(--pink);
+}
+
+.cart-btn{
+  border:0;
+  background:var(--pink);
+  color:white;
+  border-radius:999px;
+  padding:10px 17px;
+  font-weight:700;
+  box-shadow:0 6px 16px rgba(243,138,170,.28);
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero{
+  max-width:1100px;
+  margin:28px auto 0;
+  padding:45px 25px 30px;
+  text-align:center;
+  position:relative;
+  overflow:hidden;
+}
+
+.hero:before,
+.hero:after{
+  content:"♡";
+  position:absolute;
+  font-size:90px;
+  color:#f8c3d5;
+  opacity:.35;
+}
+
+.hero:before{
+  left:15px;
+  top:20px;
+}
+
+.hero:after{
+  right:20px;
+  bottom:0;
+}
+
+.badge{
+  display:inline-block;
+  background:var(--mint);
+  color:#4d8d81;
+  border-radius:999px;
+  padding:7px 17px;
+  font-weight:700;
+}
+
+h1{
+  margin:12px 0 8px;
+  font-family:'Playfair Display',serif;
+  font-size:clamp(40px,7vw,68px);
+  line-height:1.05;
+  color:#d76f91;
+}
+
+.hero p{
+  font-size:18px;
+  max-width:620px;
+  margin:0 auto 20px;
+  color:#7b6b73;
+}
+
+.hero-icons{
+  font-size:23px;
+  letter-spacing:9px;
+  color:#e69ab2;
+}
+
+
+/* =========================
+   SECTIONS
+========================= */
+
+.section{
+  max-width:1100px;
+  margin:0 auto;
+  padding:45px 20px;
+}
+
+.section-title{
+  text-align:center;
+  margin-bottom:28px;
+}
+
+.section-title h2{
+  font-family:'Playfair Display',serif;
+  font-size:34px;
+  margin:0;
+  color:#765a66;
+}
+
+.section-title p{
+  margin:4px 0;
+  color:#9a858e;
+}
+
+
+/* =========================
+   PRODUCTS
+========================= */
+
+.products{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:22px;
+}
+
+.card{
+  background:white;
+  border:1px solid var(--border);
+  border-radius:28px;
+  overflow:hidden;
+  box-shadow:var(--shadow);
+  transition:.25s;
+}
+
+.card:hover{
+  transform:translateY(-5px);
+}
+
+.image-wrap{
+  background:#fff0f5;
+  padding:12px;
+}
+
+.card img{
+  width:100%;
+  aspect-ratio:1/1;
+  object-fit:cover;
+  border-radius:20px;
+  display:block;
+  background:#fff;
+}
+
+.card-body{
+  padding:20px;
+}
+
+.card h3{
+  font-size:24px;
+  margin:0 0 4px;
+  color:#604e58;
+}
+
+.desc{
+  min-height:48px;
+  color:#8c7b84;
+  line-height:1.35;
+}
+
+.price{
+  font-size:29px;
+  font-weight:700;
+  color:#d76f91;
+  margin:10px 0;
+}
+
+
+/* =========================
+   BUY BUTTON
+========================= */
+
+.buy{
+  width:100%;
+  border:0;
+  border-radius:999px;
+  padding:14px 16px;
+  background:linear-gradient(
+    90deg,
+    #f18aaa,
+    #e9769a
+  );
+  color:#fff;
+  font-size:17px;
+  font-weight:700;
+  box-shadow:
+    0 8px 18px rgba(231,118,154,.23);
+  outline:1px dashed #f8b3c8;
+  outline-offset:-6px;
+}
+
+.buy:hover{
+  background:linear-gradient(
+    90deg,
+    #e9769a,
+    #df638d
+  );
+}
+
+.buy:active{
+  transform:scale(.98);
+}
+
+
+/* =========================
+   CONTACT
+========================= */
+
+.info{
+  background:linear-gradient(
+    135deg,
+    #fff0f5,
+    #edfaf6
+  );
+  border-radius:30px;
+  padding:35px 25px;
+  text-align:center;
+  border:1px solid #f0dfe5;
+}
+
+.info h2{
+  font-family:'Playfair Display',serif;
+  font-size:32px;
+  margin:0 0 8px;
+}
+
+.info p{
+  margin:0;
+}
+
+.contact-row{
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:12px;
+  margin-top:20px;
+}
+
+.contact{
+  background:#fff;
+  border:1px solid #efdbe4;
+  border-radius:999px;
+  padding:11px 18px;
+  font-weight:600;
+}
+
+.contact:hover{
+  transform:translateY(-2px);
+}
+
+.whatsapp{
+  background:#bfe8dc;
+  color:#427e72;
+  border:0;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+  text-align:center;
+  padding:28px 20px;
+  color:#a18b94;
+  font-size:14px;
+}
+
+footer strong{
+  color:#d07696;
+}
+
+
+/* =========================
+   CART
+========================= */
+
+.cart-panel{
+  position:fixed;
+  right:18px;
+  top:78px;
+  z-index:50;
+  width:min(390px,calc(100% - 36px));
+  background:#fff;
+  border:1px solid #f0d8e2;
+  border-radius:25px;
+  box-shadow:0 20px 60px rgba(80,50,65,.22);
+  padding:20px;
+  display:none;
+}
+
+.cart-panel.show{
+  display:block;
+}
+
+.cart-head{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.cart-head h3{
+  margin:0;
+  font-size:23px;
+}
+
+.close{
+  border:0;
+  background:#f9e5ec;
+  border-radius:50%;
+  width:35px;
+  height:35px;
+  font-size:20px;
+}
+
+.cart-item{
+  display:flex;
+  justify-content:space-between;
+  gap:12px;
+  padding:12px 0;
+  border-bottom:1px solid #f4e6eb;
+}
+
+.cart-item small{
+  color:#9a858e;
+}
+
+.remove{
+  border:0;
+  background:none;
+  color:#d87695;
+}
+
+.pay{
+  display:inline-block;
+  text-align:center;
+  background:var(--pink);
+  color:#fff;
+  border-radius:999px;
+  padding:7px 12px;
+  font-weight:700;
+  font-size:13px;
+}
+
+.note{
+  font-size:12px;
+  color:#9b8990;
+  margin-top:10px;
+  line-height:1.35;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:800px){
+
+  nav{
+    display:none;
+  }
+
+  .nav{
+    padding:12px 15px;
+  }
+
+  .brand-name{
+    font-size:21px;
+  }
+
+  .brand-sub{
+    font-size:10px;
+  }
+
+  .bow{
+    font-size:29px;
+  }
+
+  .cart-btn{
+    padding:9px 13px;
+    font-size:14px;
+  }
+
+  .hero{
+    padding:40px 20px 25px;
+  }
+
+  .hero p{
+    font-size:16px;
+  }
+
+  .products{
+    grid-template-columns:1fr;
+  }
+
+  .section{
+    padding:32px 16px;
+  }
+
+  .section-title h2{
+    font-size:29px;
+  }
+
+  .card h3{
+    font-size:23px;
+  }
+
+  .contact-row{
+    flex-direction:column;
+    align-items:stretch;
+  }
+
+  .contact{
+    text-align:center;
+  }
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<!-- =========================
+     HEADER
+========================= -->
+
+<header>
+
+<div class="nav">
+
+<a class="brand" href="#home">
+
+<div class="bow">
+🎀
+</div>
+
+<div>
+
+<div class="brand-name">
+Mivellie & Co.
+</div>
+
+<div class="brand-sub">
+little learners, big dreams ♡
+</div>
+
+</div>
+
+</a>
+
+
+<nav>
+
+<a href="#home">
+Home
+</a>
+
+<a href="#worksheets">
+Worksheets
+</a>
+
+<a href="#contact">
+Contact
+</a>
+
+</nav>
+
+
+<button
+class="cart-btn"
+onclick="toggleCart()"
+>
+
+🛒 Cart
+<span id="cartCount">0</span>
+
+</button>
+
+</div>
+
+</header>
+
+
+
+<!-- =========================
+     CART
+========================= -->
+
+<div
+id="cartPanel"
+class="cart-panel"
+>
+
+<div class="cart-head">
+
+<h3>
+🛒 Your Cart ♡
+</h3>
+
+<button
+class="close"
+onclick="toggleCart()"
+>
+×
+</button>
+
+</div>
+
+<div id="cartItems">
+</div>
+
+<div class="note">
+
+Each package has its own ToyyibPay payment page.
+If you select more than one package,
+please complete payment for each package separately.
+
+</div>
+
+</div>
+
+
+
+<!-- =========================
+     MAIN
+========================= -->
+
+<main id="home">
+
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="badge">
+
+✨ PRINTABLE LEARNING FUN ✨
+
+</div>
+
+
+<h1>
+
+Little Learners,
+<br>
+
+Big Dreams ♡
+
+</h1>
+
+
+<p>
+
+Fun & printable worksheets made with love
+for little learners at home.
+
+</p>
+
+
+<div class="hero-icons">
+
+♡ ✦ 🎀 ✦ ♡
+
+</div>
+
+</section>
+
+
+
+<!-- =========================
+     PRODUCTS
+========================= -->
+
+<section
+class="section"
+id="worksheets"
+>
+
+<div class="section-title">
+
+<h2>
+
+Choose Your Learning Set 🎀
+
+</h2>
+
+<p>
+
+Learn • Play • Create • Have Fun
+
+</p>
+
+</div>
+
+
+
+<div class="products">
+
+
+
+<!-- PRODUCT 1 -->
+
+<article class="card">
+
+<div class="image-wrap">
+
+<img
+src="shapes-and-colours-set.PNG"
+alt="Shapes and Colours Set"
+>
+
+</div>
+
+
+<div class="card-body">
+
+<h3>
+
+🌈 Shapes & Colours Set
+
+</h3>
+
+
+<div class="desc">
+
+5 sets of shapes and colours
+learning worksheets.
+
+</div>
+
+
+<div class="price">
+
+RM5
+
+</div>
+
+
+<button
+class="buy"
+onclick="addToCart(
+'Shapes & Colours Set',
+'RM5',
+'https://toyyibpay.com/shapes-and-colours-set'
+)"
+>
+
+🛒 I WANT THIS! ♡
+
+</button>
+
+</div>
+
+</article>
+
+
+
+<!-- PRODUCT 2 -->
+
+<article class="card">
+
+<div class="image-wrap">
+
+<img
+src="alphabets-and-numbers-set.PNG"
+alt="ABC and Numbers Set"
+>
+
+</div>
+
+
+<div class="card-body">
+
+<h3>
+
+🔤 ABC & Numbers Set
+
+</h3>
+
+
+<div class="desc">
+
+5 sets of ABC and numbers
+learning activities.
+
+</div>
+
+
+<div class="price">
+
+RM5
+
+</div>
+
+
+<button
+class="buy"
+onclick="addToCart(
+'ABC & Numbers Set',
+'RM5',
+'https://toyyibpay.com/alphabets-and-numbers-set'
+)"
+>
+
+🛒 I WANT THIS! ♡
+
+</button>
+
+</div>
+
+</article>
+
+
+
+<!-- PRODUCT 3 -->
+
+<article class="card">
+
+<div class="image-wrap">
+
+<img
+src="kids-activity-set.PNG"
+alt="Kids Activity Set"
+>
+
+</div>
+
+
+<div class="card-body">
+
+<h3>
+
+🎨 Kids Activity Set
+
+</h3>
+
+
+<div class="desc">
+
+12 sets of fun activities including
+scissors skill, shapes, colouring,
+spelling + FREE GIFT.
+
+</div>
+
+
+<div class="price">
+
+RM10
+
+</div>
+
+
+<button
+class="buy"
+onclick="addToCart(
+'Kids Activity Set',
+'RM10',
+'https://toyyibpay.com/kids-activity-set'
+)"
+>
+
+🛒 I WANT THIS! ♡
+
+</button>
+
+</div>
+
+</article>
+
+
+
+</div>
+
+</section>
+
+
+
+<!-- =========================
+     CONTACT
+========================= -->
+
+<section
+class="section"
+id="contact"
+>
+
+<div class="info">
+
+<h2>
+
+Made with love by
+Mivellie & Co. 🎀
+
+</h2>
+
+
+<p>
+
+For little learners,
+curious minds & happy learning moments ♡
+
+</p>
+
+
+<div class="contact-row">
+
+
+<a
+class="contact"
+href="tel:0124427232"
+>
+
+📱 012-442 7232
+
+</a>
+
+
+<a
+class="contact"
+href="mailto:mivellieandco@gmail.com"
+>
+
+✉️ mivellieandco@gmail.com
+
+</a>
+
+
+<a
+class="contact whatsapp"
+href="https://wa.me/60124427232"
+target="_blank"
+>
+
+💬 WhatsApp Us
+
+</a>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+</main>
+
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+© <span id="year"></span>
+
+<strong>
+Mivellie & Co.
+</strong>
+
+All rights reserved ♡
+
+</footer>
+
+
+
+<!-- =========================
+     JAVASCRIPT
+========================= -->
+
+<script>
+
+let cart = [];
+
+
+function addToCart(
+  name,
+  price,
+  link
+){
+
+const exists =
+cart.find(
+item => item.name === name
+);
+
+
+if(!exists){
+
+cart.push({
+name:name,
+price:price,
+link:link
+});
+
+}
+
+
+renderCart();
+
+document
+.getElementById('cartPanel')
+.classList
+.add('show');
+
+}
+
+
+
+function removeFromCart(name){
+
+cart =
+cart.filter(
+item => item.name !== name
+);
+
+renderCart();
+
+}
+
+
+
+function toggleCart(){
+
+document
+.getElementById('cartPanel')
+.classList
+.toggle('show');
+
+}
+
+
+
+function renderCart(){
+
+document
+.getElementById('cartCount')
+.textContent =
+cart.length;
+
+
+const box =
+document.getElementById(
+'cartItems'
+);
+
+
+if(cart.length === 0){
+
+box.innerHTML = `
+
+<p
+style="
+text-align:center;
+color:#9a858e;
+padding:15px 0;
+"
+>
+
+Your cart is empty ♡
+
+</p>
+
+`;
+
+return;
+
+}
+
+
+box.innerHTML = cart.map(
+item => `
+
+<div class="cart-item">
+
+<div>
+
+<strong>
+${item.name}
+</strong>
+
+<br>
+
+<small>
+${item.price}
+</small>
+
+</div>
+
+
+<div>
+
+<a
+class="pay"
+href="${item.link}"
+target="_blank"
+>
+
+Pay
+
+</a>
+
+
+<button
+class="remove"
+onclick="removeFromCart('${item.name}')"
+>
+
+Remove
+
+</button>
+
+</div>
+
+</div>
+
+`
+).join('');
+
+}
+
+
+
+document
+.getElementById('year')
+.textContent =
+new Date().getFullYear();
+
+
+renderCart();
+
+</script>
+
+
+</body>
+</html>
